@@ -8,11 +8,8 @@ export default class SearchBar extends Component {
             term: ''
         }
 
-        // this which is an instance of SearchBar has a function called onInputChange
-        // bind that function to this (which is SearchBar) and then replace
-        // onInputChange with this new bind instance of this function
-        // or take the existing function, bind it to this and then replace the existing
-        // function with this
+        // take the existing function, bind it to this (which is SearchBar) and then
+        // replace the existing function with this new bind instance of this function
         this.onInputChange = this.onInputChange.bind(this)
     }
 
